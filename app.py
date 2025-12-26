@@ -95,3 +95,7 @@ if uploaded_file is not None:
         # Optional: Save to CSV
         if st.checkbox("Download results as CSV"):
             import pandas as pd
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
