@@ -43,7 +43,7 @@ def predict_image(image, model):
 # Load model
 @st.cache_resource
 def get_model():
-    model_weights_path = model_epoch_10.pth
+    model_weights_path = 'model_epoch_10.pth'
     return load_model(model_weights_path)
 
 model = get_model()
